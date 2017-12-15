@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>TAMU - Spring Security</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="css/main.css" th:href="@{/css/main.css}" />
+    </head>
+    <body>
+        <div th:replace="index::logout"></div>
+        <h1> Spring Security Admin Page</h1>
+        
+        <h2 th:text = "${message}"> </h2>
+                <h3 th:text = "${owner}"> </h3>
+        
+                <h3 th:text = "${role}"> </h3>
+        
+                <h3 th:text = "${permission}"> </h3>
+        
+        <p>This is the <b>administration</b> zone</p>
+        <p>Only authenticated users with role <b>ADMIN/Operator</b> are allowed to see this page.</p>
+        <p><a href="../index.html" th:href="@{/index.html}">Back to home page</a></p>
+    </body>
+</html>
