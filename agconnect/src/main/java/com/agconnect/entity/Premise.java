@@ -1,15 +1,34 @@
 package com.agconnect.entity;
 
-import java.sql.Date;
+import java.sql.Timestamp;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="premise")
 public class Premise {
 	
+	@Id
+	@Column(name="premiseID")
 	private int premiseID;
+	
+	@Column(name="ownerID")
 	private int ownerId;
+	
+	@Column(name="siteName")
 	private String siteName;
+	
+	@Column(name="latitude")
 	private int latitude;
+	
+	@Column(name="longitude")
 	private int longitude;
-	private Date createdTimeStamp;
+	
+	@Column(name="createTimeStamp")
+	private Timestamp createdTimeStamp;
 
 	public int getPremiseID() {
 		return premiseID;
@@ -51,11 +70,11 @@ public class Premise {
 		this.longitude = longitude;
 	}
 
-	public Date getCreatedTimeStamp() {
+	public Timestamp getCreatedTimeStamp() {
 		return createdTimeStamp;
 	}
 
-	public void setCreatedTimeStamp(Date createdTimeStamp) {
+	public void setCreatedTimeStamp(Timestamp createdTimeStamp) {
 		this.createdTimeStamp = createdTimeStamp;
 	}
 
