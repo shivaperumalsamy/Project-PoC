@@ -14,7 +14,7 @@
 			<version>3.8.1</version>
 			<scope>test</scope>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>servlet-api</artifactId>
@@ -57,38 +57,38 @@
 			<version>6.0.6</version>
 		</dependency>
 		<!-- HIBERNATE -->
-        <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-entitymanager -->
-        <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-entitymanager</artifactId>
-            <version>5.2.2.Final</version>
-        </dependency>
+		<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-entitymanager -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
+			<version>5.2.2.Final</version>
+		</dependency>
 
 
-        <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-validator -->
-        <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-validator</artifactId>
-            <version>5.2.2.Final</version>
-        </dependency>
+		<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-validator -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-validator</artifactId>
+			<version>5.2.2.Final</version>
+		</dependency>
 
 
-        <!-- https://mvnrepository.com/artifact/org.hibernate.common/hibernate-commons-annotations -->
-        <dependency>
-            <groupId>org.hibernate.common</groupId>
-            <artifactId>hibernate-commons-annotations</artifactId>
-            <version>5.0.0.Final</version>
-        </dependency>
+		<!-- https://mvnrepository.com/artifact/org.hibernate.common/hibernate-commons-annotations -->
+		<dependency>
+			<groupId>org.hibernate.common</groupId>
+			<artifactId>hibernate-commons-annotations</artifactId>
+			<version>5.0.0.Final</version>
+		</dependency>
 
 
 
-        <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
-        <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-core</artifactId>
-            <version>5.2.2.Final</version>
-        </dependency>
-        
+		<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>5.2.2.Final</version>
+		</dependency>
+
 		<dependency>
 			<groupId>com.google.code.maven-play-plugin.com.mchange</groupId>
 			<artifactId>c3p0-oracle-thin-extras</artifactId>
@@ -117,5 +117,17 @@
 	</dependencies>
 	<build>
 		<finalName>AgConnect</finalName>
+		<plugins>
+
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.1</version>
+				<configuration>
+					<source>1.8</source> <!-- yours Java version -->
+					<target>1.8</target> <!-- yours Java version -->
+				</configuration>
+			</plugin>
+
+		</plugins>
 	</build>
 </project>
